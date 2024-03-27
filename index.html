@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- boxIcons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.2.0/swiper-bundle.min.css"
+        integrity="sha512-s6khMl5GDS1HbQ5/SwL1wzMayPwHXPjKoBN5kHUTDqKEPkkGyEZWKyH2lQ3YO2q3dxueG3rE0NHjRawMHd2b6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <!-- favIcon -->
+    <link rel="shortcut icon" href="./img/logo barbearia.png" image/x-icon" width="">
+    <!-- meuCSS -->
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="./css/media.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
+    <title>Barbearia Petrini</title>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <header>
+            <nav>
+                <div class="navbar" id="myNavbar">
+                    <a href="#home"><img src="./img/logo barbearia.png" alt=""></a>
+                    <a href="#home" class="txtnav">inicio</a>
+                    <a href="produtos.html" class="txtnav">Cortes</a>
+                    
+                    <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+                        &#9776;
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+
+            <!-- REGIÃO HOME  -->
+            <section id="home">
+
+                <div class="home-container">
+
+
+                    <!-- Swiper -->
+                    <swiper-container class="mySwiper" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+                        <swiper-slide><img src="./img/fundoBarbearia.jpg" alt=""></swiper-slide>
+                        <swiper-slide><img src="./img/fundoBarbearia2.jpg" alt=""></swiper-slide>
+                        <swiper-slide><img src="./img/fundoBarbearia3.png" alt=""></swiper-slide>
+                        <swiper-slide><img src="./img/fundoBarbearia4.jpg" alt=""></swiper-slide>
+                    </swiper-container>
+
+                    <div class="home-inner">
+                        <ul>
+                            <li>
+                                <h1>Bem vindo a Barbearia Petrini</h1>
+                            </li>
+                            <li>
+                                <a href="produtos.html">Veja os Cortes</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+            </section>
+
+            <!-- REGIÃO SERVIÇOS  -->
+            <section id="servico">
+
+                <div class="servico-titulo">
+                    <h2>Veja Mais sobre Nossos serviços</h2>
+                </div>
+
+                <div class="servico-container">
+                    <section class="articles">
+                        <article>
+                            <div class="article-wrapper">
+                                <figure>
+                                    <img src="./img/corteCabelo.png" alt="" />
+                                </figure>
+                                <div class="article-body">
+                                    <h2>Corte</h2>
+                                    <p>
+                                        A variedade de cortes de cabelo masculino é ampla e diversificada, incluindo
+                                        estilos clássicos e modernos para todos os gostos. Com a nossa orientação de um
+                                        barbeiro experiente, é possível encontrar o corte ideal que destaque o melhor de
+                                        cada pessoa, proporcionando estilo e confiança.
+                                    </p>
+                                    <a href="produtos.html" class="read-more">
+                                        Veja Mais <span class="sr-only">about this is some title</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20"
+                                            fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+
+                            <div class="article-wrapper">
+                                <figure>
+                                    <img src="./img/fundoBarbearia2.jpg" alt="" />
+                                </figure>
+                                <div class="article-body">
+                                    <h2>Barba</h2>
+                                    <p>
+                                        A variedade de estilos de barba é ampla, oferecendo opções para todos os gostos
+                                        e formatos de rosto. Com a nossa ajuda de um barbeiro experiente, é possível
+                                        encontrar o estilo ideal que combine com a personalidade de cada homem,
+                                        adicionando um toque único ao visual.
+                                    </p>
+                                    <a href="produtos.html" class="read-more">
+                                        Veja Mais <span class="sr-only">about this is some title</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20"
+                                            fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+
+                            <div class="article-wrapper">
+                                <figure>
+                                    <img src="./img/luzes.jpg" alt="" />
+                                </figure>
+                                <div class="article-body">
+                                    <h2>Pintura</h2>
+                                    <p>
+                                        A pintura no cabelo oferece diversas opções para mudar o visual, com cores
+                                        naturais ou vibrantes. Com a nossa orientação de um profissional, é possível
+                                        encontrar a cor ideal, adicionando criatividade ao visual.
+                                    </p>
+                                    <a href="produtos.html" class="read-more">
+                                        Veja Mais <span class="sr-only">about this is some title</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20"
+                                            fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </section>
+
+
+            <section id="info">
+
+                <div class="info-container">
+
+                    <div class="info-titulo">
+                        <h2>Veja sobre a Barbearia</h2>
+                    </div>
+                    <div class="info-inner">
+
+
+                        <div class="info-txt">
+
+                            <ul>
+                                <li>
+                                    <h2>Barbearia Petrini</h2>
+                                </li>
+
+                                <li>
+                                    <p>
+                                        A Barbearia Petrini oferece cortes de cabelo e barba de alta qualidade, em um
+                                        ambiente acolhedor e com profissionais experientes. Visite-nos e descubra por
+                                        que somos o destino preferido dos homens modernos.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h2>Horario de funcionamento:</h2>
+                                </li>
+
+                                <li>
+
+                                <li>
+                                    <h3>Terça a Domingo:</h3>
+                                </li>
+                                <li>
+                                    <p> 09:00 as 12:00 e
+                                        13:30 as 22:00</p>
+                                </li>
+
+
+                            </ul>
+
+                        </div>
+
+                        <div class="swiper-card2">
+
+                            <div class="card2-inner">
+                                <!-- Swiper -->
+                                <swiper-container class="mySwiper" autoplay-delay="2500"
+                                    autoplay-disable-on-interaction="false">
+                                    <swiper-slide><img src="./img/corteCabelo2.png" alt=""
+                                            style="border-radius: 15px;"></swiper-slide>
+                                    <swiper-slide><img src="./img/corteCabelo3.jpg" alt=""
+                                            style="border-radius: 15px;"></swiper-slide>
+                                    <swiper-slide><img src="./img/corteCabelo.png" alt=""
+                                            style="border-radius: 15px;"></swiper-slide>
+                                    <swiper-slide><img src="./img/corteCabelo4.jpg" alt=""
+                                            style="border-radius: 15px;"></swiper-slide>
+                                </swiper-container>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+
+                </div>
+
+
+
+            </section>
+
+            <section id="localizacao">
+                <div class="servico-titulo">
+                    <h2>Veja nossa Localização</h2>
+                </div>
+
+
+                <div class="localizacao-container">
+
+
+                    <div class="loc-mapa">
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.4168437561775!2d-46.37946861487806!3d-23.481490704125473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce634680db0e3b%3A0xf936402fa48f0418!2sR.%20Serra%20Negra%2C%20236%20-%20Vila%20Bartira%2C%20Itaquaquecetuba%20-%20SP%2C%2008577-570!5e0!3m2!1spt-BR!2sbr!4v1709875682937!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <p>Rua Serra Negra, 236 - Vila Bartira, Itaquaquecetuba</p>
+                    </div>
+
+
+
+                </div>
+
+
+
+
+
+            </section>
+
+
+        </main>
+
+
+        <footer>
+            <div class="footer">
+
+
+
+                <ul>
+                    <link rel="stylesheet"
+                        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+                    <a href="https://wa.me/5511958693471?text=Adorei%20seu%20artigo" target="_blank">
+                        <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+                    </a>
+
+                </ul>
+                <div class="site-dev"><a href="https://www.miguelcferreira.com.br" target="_blank"><span>&copy;</span>
+                        Copyright Miguel Desenvolvedor</a></div>
+            </div>
+
+        </footer>
+
+
+    </div>
+
+
+
+    <!-- MEU LINK JS  -->
+    <script src="script/script.js"></script>
+
+    <!-- JQUERY  -->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    <!-- cdn  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+
+
+</body>
+
+</html>
