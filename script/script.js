@@ -1,34 +1,40 @@
 
-//#region navbar 
-function toggleNavbar() {
-    var x = document.getElementById("myNavbar");
-    if (x.className === "navbar") {
-        x.className += " responsive";
-    } else {
-        x.className = "navbar";
-    }
-}
-
-//#endregion
-
-
 
 
 
 //#region swiper home
-
-const progressCircle = document.querySelector(".autoplay-progress svg");
- const progressContent = document.querySelector(".autoplay-progress span");
-
- const swiperEl = document.querySelector("swiper-container");
- swiperEl.addEventListener("autoplaytimeleft", (e) => {
-   const [swiper, time, progress] = e.detail;
-   progressCircle.style.setProperty("--progress", 1 - progress);
-   progressContent.textContent = `${Math.ceil(time / 1000)}s`;
-   
- });
-
-
+var swiper = new Swiper(".mySwiper", {
+  speed: 1000,
+  parallax: true,
+  loop: true,
+  autoplay: {
+    delay: 6000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  }
+});
  //#endregion
+
+
+ var swiper2 = new Swiper(".mySwiper2", {
+  spaceBetween: 30,
+  effect: "fade",
+  loop: true,
+  autoplay: {
+    delay: 6000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination.mySwiper2-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next.mySwiper2-next",
+    prevEl: ".swiper-button-prev.mySwiper2-prev",
+  },
+});
 
 
