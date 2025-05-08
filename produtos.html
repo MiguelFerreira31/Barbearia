@@ -1,60 +1,111 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <title>Gradiente Animado</title>
-  <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Preloader com Loader Customizado</title>
   <style>
-    body {
-      background: #fff;
-      font-family: 'Arimo', sans-serif;
-      padding: 100px;
+    /* Preloader container */
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
-    .sobre-title {
+    /* Loader personalizado */
+    .loader {
+      width: 48px;
+      height: 48px;
+      margin: auto;
       position: relative;
     }
 
-    .sobre-title h4 {
-      position: relative;
-      z-index: 2;
-      font-size: 1.5rem;
-      color: #333;
+    .loader:before {
+      content: '';
+      width: 48px;
+      height: 5px;
+      background: #f0808050;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      border-radius: 50%;
+      animation: shadow324 0.5s linear infinite;
     }
 
-    .sobre-title h2 {
+    .loader:after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: #463737;
       position: absolute;
       top: 0;
       left: 0;
-      font-size: 6rem;
-      transform: translate(10px, -15px);
-      z-index: 1;
-      pointer-events: none;
-      display: inline-block;
-
-      background: linear-gradient(90deg, #ff7a18, #af002d, #319197, #ff7a18);
-      background-size: 200% auto;
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-      -webkit-text-fill-color: transparent;
-      animation: gradientMove 5s linear infinite;
+      border-radius: 4px;
+      animation: jump7456 0.5s linear infinite;
     }
 
-    @keyframes gradientMove {
-      0% {
-        background-position: 0% center;
+    @keyframes jump7456 {
+      15% {
+        border-bottom-right-radius: 3px;
+      }
+      25% {
+        transform: translateY(9px) rotate(22.5deg);
+      }
+      50% {
+        transform: translateY(18px) scale(1, .9) rotate(45deg);
+        border-bottom-right-radius: 40px;
+      }
+      75% {
+        transform: translateY(9px) rotate(67.5deg);
       }
       100% {
-        background-position: 200% center;
+        transform: translateY(0) rotate(90deg);
       }
+    }
+
+    @keyframes shadow324 {
+      0%, 100% {
+        transform: scale(1, 1);
+      }
+      50% {
+        transform: scale(1.2, 1);
+      }
+    }
+
+    /* Conteúdo da página */
+    #conteudo {
+      display: none;
+      padding: 20px;
+      text-align: center;
+      font-family: Arial, sans-serif;
     }
   </style>
 </head>
 <body>
-  <div class="sobre-title">
-    <h4>Sobre Nós</h4>
-    <h2>Sobre</h2>
+  <div id="preloader">
+    <div class="loader"></div>
   </div>
+
+  <div id="conteudo">
+    <h1>Bem-vindo ao site!</h1>
+    <p>O conteúdo foi carregado com sucesso.</p>
+  </div>
+
+  <script>
+    // Simulação de carregamento
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        document.getElementById("preloader").style.display = "none";
+        document.getElementById("conteudo").style.display = "block";
+      }, 1000); // Tempo para o preloader ser visível
+    });
+  </script>
 </body>
 </html>

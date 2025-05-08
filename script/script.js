@@ -1,6 +1,12 @@
+AOS.init();
 
-
-
+  // Simulação de carregamento
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      document.getElementById("preloader").style.display = "none";
+      document.getElementById("conteudo").style.display = "block";
+    }, 1000); // Tempo para o preloader ser visível
+  });
 
 //#region swiper home
 var swiper = new Swiper(".mySwiper", {

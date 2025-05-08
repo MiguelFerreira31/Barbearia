@@ -15,9 +15,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- favIcon -->
-    <link rel="shortcut icon" href="./img/logo barbearia.png" image/x-icon" width="">
-    <!-- meuCSS -->
+    <link rel="shortcut icon" href="./img/logo_white.png" type="image/x-icon"> <!-- meuCSS -->
 
     <link rel="stylesheet" href="./css/style.css">
 
@@ -28,6 +29,15 @@
 </head>
 
 <body>
+
+    <div id="preloader">
+        <div class="loader"></div>
+      </div>
+
+<div id="conteudo">
+
+
+
 
     <header>
         <nav class="navbar navbar-dark " aria-label="Barbearia Petrini" style="   background-color: #000000;">
@@ -42,7 +52,7 @@
                     style="backdrop-filter: blur(10px);      background-color: #0a0a0a68;" tabindex="-1"
                     id="offcanvasNavbarDark" aria-labelledby="offcanvasNavbarDarkLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">Offcanvas</h5>
+                        <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">Menu</h5>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                             aria-label="Close"></button>
                     </div>
@@ -155,8 +165,8 @@
 
             <div class="service-container">
                 <div class="service-title">
-                    <img src="img/barbershop-4284_256.gif" alt="">
-                    <h4>Conheça nossos Serviços</h4>
+                    <img src="img/barbershop-4284_256.gif" alt="" data-aos="fade-right">
+                    <h4 data-aos="fade-left">Conheça nossos Serviços</h4>
 
 
 
@@ -167,15 +177,15 @@
                     <ul>
                         <li>
                             <div class="img-fundo">
-                                <img src="img/barba.png" alt="Barba">
+                                <img src="img/barba.png" alt="Barba"  data-aos="zoom-in" data-aos-duration="600">
                             </div>
                         </li>
-                        <li><strong>Barba</strong></li>
+                        <li data-aos="zoom-in-up" data-aos-duration="600"><strong>Barba</strong></li>
                         <li>
                             <h4>Design de Barba</h4>
                         </li>
                         <li>
-                            <p>Modelagem e alinhamento da barba com toalha quente, navalha e finalização com óleo
+                            <p data-aos="fade-right">Modelagem e alinhamento da barba com toalha quente, navalha e finalização com óleo
                                 hidratante.</p>
                         </li>
                     </ul>
@@ -183,15 +193,15 @@
                     <ul>
                         <li>
                             <div class="img-fundo">
-                                <img src="img/cabelo.png" alt="Cabelo">
+                                <img src="img/cabelo.png" alt="Cabelo"  data-aos="zoom-in" data-aos-duration="600">
                             </div>
                         </li>
-                        <li><strong>Cabelo</strong></li>
+                        <li data-aos="zoom-in-down" data-aos-duration="600"><strong>Cabelo</strong></li>
                         <li>
-                            <h4>Corte Masculino</h4>
+                            <h4 >Corte Masculino</h4>
                         </li>
                         <li>
-                            <p>Corte moderno ou clássico com acabamento preciso, lavagem e finalização com pomada
+                            <p data-aos="fade-up">Corte moderno ou clássico com acabamento preciso, lavagem e finalização com pomada
                                 modeladora.</p>
                         </li>
                     </ul>
@@ -199,15 +209,16 @@
                     <ul>
                         <li>
                             <div class="img-fundo">
-                                <img src="img/oleo-de-barba.png" alt="Óleo de Barba">
+                                <img src="img/oleo-de-barba.png" alt="Óleo de Barba"  data-aos="zoom-in" 
+                                data-aos-duration="600">
                             </div>
                         </li>
-                        <li><strong>Produtos</strong></li>
+                        <li data-aos="zoom-in-up" data-aos-duration="600"><strong>Produtos</strong></li>
                         <li>
                             <h4>Óleo para Barba</h4>
                         </li>
                         <li>
-                            <p>Hidrata e dá brilho à barba, promovendo maciez e prevenindo coceiras e irritações na
+                            <p data-aos="fade-left">Hidrata e dá brilho à barba, promovendo maciez e prevenindo coceiras e irritações na
                                 pele.</p>
                         </li>
                     </ul>
@@ -222,7 +233,7 @@
 
         <section id="sobre">
             <div class="sobre-container">
-                <div class="swiper mySwiper2">
+                <div class="swiper mySwiper2" data-aos="fade-right" data-aos-duration="600">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <img src="./img/mid fade.png" alt="">
@@ -252,27 +263,29 @@
 
                 <article>
                     <div class="sobre-title">
-                        <h4>Sobre a Barbearia</h4>
-                        <h2>Quem Somos</h2>
-                        <p>O melhor corte de cabelo e cuidados para homens com estilo.</p>
+                        <h4 data-aos="fade-right" data-aos-duration="600">Sobre a Barbearia</h4>
+                        <h2 data-aos="zoom-in" data-aos-duration="600">Quem Somos</h2>
+                        <p data-aos="fade-left" data-aos-duration="600">O melhor corte de cabelo e cuidados para homens com estilo.</p>
                     </div>
-                
-                    <p>Na nossa barbearia, oferecemos cortes modernos e personalizados para homens, com profissionais especializados para todos os estilos.</p>
 
-                    <p>Além dos cortes, também realizamos serviços de barba, hidratação e um atendimento completo, proporcionando uma experiência única e de qualidade.</p>
-                    
+                    <p data-aos="fade-down" data-aos-duration="600">Na nossa barbearia, oferecemos cortes modernos e personalizados para homens, com profissionais
+                        especializados para todos os estilos.</p>
+
+                    <p data-aos="fade-left" data-aos-duration="600" >Além dos cortes, também realizamos serviços de barba, hidratação e um atendimento completo,
+                        proporcionando uma experiência única e de qualidade.</p>
+
 
                     <a class="fancy" href="#">
                         <span class="top-key"></span>
                         <span class="text">Ver Mais</span>
                         <span class="bottom-key-1"></span>
                         <span class="bottom-key-2"></span>
-                      </a>
+                    </a>
 
                 </article>
-                
 
-           
+
+
 
 
             </div>
@@ -292,7 +305,7 @@
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
 
-
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
     <!-- JQUERY  -->
@@ -307,6 +320,9 @@
 
     <!-- MEU LINK JS  -->
     <script src="script/script.js"></script>
+
+</div>
+
 </body>
 
 </html>
