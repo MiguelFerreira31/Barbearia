@@ -22,7 +22,7 @@
 
     <link rel="stylesheet" href="./css/style.css">
 
-    <link rel="stylesheet" href="./css/media.css">
+
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400" rel="stylesheet">
     <title>Barbearia Petrini</title>
@@ -32,296 +32,316 @@
 
     <div id="preloader">
         <div class="loader"></div>
-      </div>
+    </div>
 
-<div id="conteudo">
-
-
+    <div id="conteudo">
 
 
-    <header>
-        <nav class="navbar navbar-dark " aria-label="Barbearia Petrini" style="   background-color: #000000;">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Barbearia Petrini</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end "
-                    style="backdrop-filter: blur(10px);      background-color: #0a0a0a68;" tabindex="-1"
-                    id="offcanvasNavbarDark" aria-labelledby="offcanvasNavbarDarkLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">Menu</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
+
+
+        <header>
+            <nav class="navbar navbar-dark " aria-label="Barbearia Petrini" style="   background-color: #000000;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Barbearia Petrini</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end "
+                        style="backdrop-filter: blur(10px);      background-color: #0a0a0a68;" tabindex="-1"
+                        id="offcanvasNavbarDark" aria-labelledby="offcanvasNavbarDarkLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarDarkLabel">Menu</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#service">serviços</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#sobre">Sobre</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://wa.me/5511958693471?text=Olá%2C%20Barbearia Petrini%20Gostaria de%20mais%20informações da Barbearia!" target="_blank">Contato</a>
+
+                                </li>
+                            </ul>
+
+                        </div>
                     </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                </div>
+            </nav>
+
+        </header>
+
+
+        <main>
+            <section id="home">
+                <div class="home-container">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+
+                            <!-- Slide 1 -->
+                            <div class="swiper-slide" style="background-image: url('img/bg2.png');">
+                                <div class="overlay-gradient"></div>
+                                <div class="slide-txt" data-swiper-parallax="-300">
+                                    <img src="img/logo_white.png" alt="Logo" class="logo-parallax"
+                                        data-swiper-parallax-opacity="0">
+                                    <div class="title" data-swiper-parallax="-300">Transforme seu Visual</div>
+                                    <div class="subtitle" data-swiper-parallax="-200">Corte com Estilo</div>
+                                    <div class="text" data-swiper-parallax="-100">
+                                        <p>Experimente um corte moderno e único, feito sob medida para você.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 2 -->
+                            <div class="swiper-slide"
+                                style="background-image: url('img/bg3.png'); filter: brightness(0.8);">
+                                <div class="overlay-gradient"></div>
+                                <div class="slide-txt" data-swiper-parallax="-300">
+                                    <img src="img/logo_white.png" alt="Logo" class="logo-parallax">
+                                    <div class="title" data-swiper-parallax="-250">Conforto e Estilo</div>
+                                    <div class="subtitle" data-swiper-parallax="-200">Ambiente Aconchegante</div>
+                                    <div class="text" data-swiper-parallax="-100">
+                                        <p>Desfrute de um atendimento exclusivo em um ambiente moderno e relaxante.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 3 -->
+                            <div class="swiper-slide" style="background-image: url('img/bg1.png'); filter: sepia(0.3);">
+                                <div class="overlay-gradient"></div>
+                                <div class="slide-txt" data-swiper-parallax="-300">
+                                    <img src="img/logo_white.png" alt="Logo" class="logo-parallax">
+                                    <div class="title" data-swiper-parallax="-250">A Arte da Barbearia</div>
+                                    <div class="subtitle" data-swiper-parallax="-200">Sinta-se como um Rei</div>
+                                    <div class="text" data-swiper-parallax="-100">
+                                        <p>Profissionais qualificados para proporcionar o melhor serviço para você.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 4 -->
+                            <div class="swiper-slide"
+                                style="background-image: url('img/bg4.png'); transform: scale(1.02);">
+                                <div class="overlay-gradient"></div>
+                                <div class="slide-txt" data-swiper-parallax="-300">
+                                    <img src="img/logo_white.png" alt="Logo" class="logo-parallax">
+                                    <div class="title" data-swiper-parallax="-250">Corte Personalizado</div>
+                                    <div class="subtitle" data-swiper-parallax="-200">Do Seu Jeito</div>
+                                    <div class="text" data-swiper-parallax="-100">
+                                        <p>Nosso diferencial é entender o seu estilo e trazer o melhor corte para você.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 5 -->
+                            <div class="swiper-slide"
+                                style="background-image: url('img/bg5.png'); filter: contrast(1.2);">
+                                <div class="overlay-gradient"></div>
+                                <div class="slide-txt" data-swiper-parallax="-300">
+                                    <img src="img/logo_white.png" alt="Logo" class="logo-parallax">
+                                    <div class="title" data-swiper-parallax="-250">Promoções Especiais</div>
+                                    <div class="subtitle" data-swiper-parallax="-200">Agende Agora!</div>
+                                    <div class="text" data-swiper-parallax="-100">
+                                        <p>Aproveite nossas ofertas e marque seu horário online com facilidade.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Paginação -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="service">
+
+                <div class="service-container">
+                    <div class="service-title">
+                        <img src="img/barbershop-4284_256.gif" alt="" data-aos="fade-right">
+                        <h4 data-aos="zoom-in">Conheça nossos Serviços</h4>
+
+                    </div>
+
+                    <div class="service-cards">
+
+                        <ul>
+                            <li>
+                                <div class="img-fundo">
+                                    <img src="img/barba.png" alt="Barba" data-aos="zoom-in" data-aos-duration="600">
+                                </div>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#service">serviços</a>
+                            <li data-aos="zoom-in-up" data-aos-duration="600"><strong>Barba</strong></li>
+                            <li>
+                                <h4>Design de Barba</h4>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
+                            <li>
+                                <p data-aos="fade-right">Modelagem e alinhamento da barba com toalha quente, navalha e
+                                    finalização com óleo
+                                    hidratante.</p>
                             </li>
                         </ul>
 
-                    </div>
-                </div>
-            </div>
-        </nav>
-
-    </header>
-
-
-    <main>
-        <section id="home">
-            <div class="home-container">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-
-                        <!-- Slide 1 -->
-                        <div class="swiper-slide" style="background-image: url('img/bg2.png');">
-                            <div class="overlay-gradient"></div>
-                            <div class="slide-txt" data-swiper-parallax="-300">
-                                <img src="img/logo_white.png" alt="Logo" class="logo-parallax"
-                                    data-swiper-parallax-opacity="0">
-                                <div class="title" data-swiper-parallax="-300">Transforme seu Visual</div>
-                                <div class="subtitle" data-swiper-parallax="-200">Corte com Estilo</div>
-                                <div class="text" data-swiper-parallax="-100">
-                                    <p>Experimente um corte moderno e único, feito sob medida para você.</p>
+                        <ul>
+                            <li>
+                                <div class="img-fundo">
+                                    <img src="img/cabelo.png" alt="Cabelo" data-aos="zoom-in" data-aos-duration="600">
                                 </div>
-                            </div>
-                        </div>
+                            </li>
+                            <li data-aos="zoom-in-down" data-aos-duration="600"><strong>Cabelo</strong></li>
+                            <li>
+                                <h4>Corte Masculino</h4>
+                            </li>
+                            <li>
+                                <p data-aos="fade-up">Corte moderno ou clássico com acabamento preciso, lavagem e
+                                    finalização com pomada
+                                    modeladora.</p>
+                            </li>
+                        </ul>
 
-                        <!-- Slide 2 -->
-                        <div class="swiper-slide"
-                            style="background-image: url('img/bg3.png'); filter: brightness(0.8);">
-                            <div class="overlay-gradient"></div>
-                            <div class="slide-txt" data-swiper-parallax="-300">
-                                <img src="img/logo_white.png" alt="Logo" class="logo-parallax">
-                                <div class="title" data-swiper-parallax="-250">Conforto e Estilo</div>
-                                <div class="subtitle" data-swiper-parallax="-200">Ambiente Aconchegante</div>
-                                <div class="text" data-swiper-parallax="-100">
-                                    <p>Desfrute de um atendimento exclusivo em um ambiente moderno e relaxante.</p>
+                        <ul>
+                            <li>
+                                <div class="img-fundo">
+                                    <img src="img/oleo-de-barba.png" alt="Óleo de Barba" data-aos="zoom-in"
+                                        data-aos-duration="600">
                                 </div>
-                            </div>
-                        </div>
+                            </li>
+                            <li data-aos="zoom-in-up" data-aos-duration="600"><strong>Produtos</strong></li>
+                            <li>
+                                <h4>Óleo para Barba</h4>
+                            </li>
+                            <li>
+                                <p data-aos="fade-up">Hidrata e dá brilho à barba, promovendo maciez e prevenindo
+                                    coceiras e irritações na
+                                    pele.</p>
+                            </li>
+                        </ul>
 
-                        <!-- Slide 3 -->
-                        <div class="swiper-slide" style="background-image: url('img/bg1.png'); filter: sepia(0.3);">
-                            <div class="overlay-gradient"></div>
-                            <div class="slide-txt" data-swiper-parallax="-300">
-                                <img src="img/logo_white.png" alt="Logo" class="logo-parallax">
-                                <div class="title" data-swiper-parallax="-250">A Arte da Barbearia</div>
-                                <div class="subtitle" data-swiper-parallax="-200">Sinta-se como um Rei</div>
-                                <div class="text" data-swiper-parallax="-100">
-                                    <p>Profissionais qualificados para proporcionar o melhor serviço para você.</p>
-                                </div>
-                            </div>
-                        </div>
 
-                        <!-- Slide 4 -->
-                        <div class="swiper-slide" style="background-image: url('img/bg4.png'); transform: scale(1.02);">
-                            <div class="overlay-gradient"></div>
-                            <div class="slide-txt" data-swiper-parallax="-300">
-                                <img src="img/logo_white.png" alt="Logo" class="logo-parallax">
-                                <div class="title" data-swiper-parallax="-250">Corte Personalizado</div>
-                                <div class="subtitle" data-swiper-parallax="-200">Do Seu Jeito</div>
-                                <div class="text" data-swiper-parallax="-100">
-                                    <p>Nosso diferencial é entender o seu estilo e trazer o melhor corte para você.</p>
-                                </div>
-                            </div>
-                        </div>
 
-                        <!-- Slide 5 -->
-                        <div class="swiper-slide" style="background-image: url('img/bg5.png'); filter: contrast(1.2);">
-                            <div class="overlay-gradient"></div>
-                            <div class="slide-txt" data-swiper-parallax="-300">
-                                <img src="img/logo_white.png" alt="Logo" class="logo-parallax">
-                                <div class="title" data-swiper-parallax="-250">Promoções Especiais</div>
-                                <div class="subtitle" data-swiper-parallax="-200">Agende Agora!</div>
-                                <div class="text" data-swiper-parallax="-100">
-                                    <p>Aproveite nossas ofertas e marque seu horário online com facilidade.</p>
-                                </div>
-                            </div>
-                        </div>
 
                     </div>
 
-                    <!-- Paginação -->
-                    <div class="swiper-pagination"></div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="service">
+            <section id="sobre">
+                <div class="sobre-container">
+                    <div class="swiper mySwiper2" data-aos="fade-right" data-aos-duration="600">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./img/mid fade.png" alt="">
 
-            <div class="service-container">
-                <div class="service-title">
-                    <img src="img/barbershop-4284_256.gif" alt="" data-aos="fade-right">
-                    <h4 data-aos="fade-left">Conheça nossos Serviços</h4>
-
-
-
-                </div>
-
-                <div class="service-cards">
-
-                    <ul>
-                        <li>
-                            <div class="img-fundo">
-                                <img src="img/barba.png" alt="Barba"  data-aos="zoom-in" data-aos-duration="600">
+                                <img src="./img/high fade3.png" alt="">
                             </div>
-                        </li>
-                        <li data-aos="zoom-in-up" data-aos-duration="600"><strong>Barba</strong></li>
-                        <li>
-                            <h4>Design de Barba</h4>
-                        </li>
-                        <li>
-                            <p data-aos="fade-right">Modelagem e alinhamento da barba com toalha quente, navalha e finalização com óleo
-                                hidratante.</p>
-                        </li>
-                    </ul>
+                            <div class="swiper-slide">
+                                <img src="./img/cortecabelo3.jpg" alt="">
 
-                    <ul>
-                        <li>
-                            <div class="img-fundo">
-                                <img src="img/cabelo.png" alt="Cabelo"  data-aos="zoom-in" data-aos-duration="600">
+                                <img src="./img/cortecabelo4.jpg" alt="">
                             </div>
-                        </li>
-                        <li data-aos="zoom-in-down" data-aos-duration="600"><strong>Cabelo</strong></li>
-                        <li>
-                            <h4 >Corte Masculino</h4>
-                        </li>
-                        <li>
-                            <p data-aos="fade-up">Corte moderno ou clássico com acabamento preciso, lavagem e finalização com pomada
-                                modeladora.</p>
-                        </li>
-                    </ul>
+                            <div class="swiper-slide">
+                                <img src="./img/low fade.png" alt="">
 
-                    <ul>
-                        <li>
-                            <div class="img-fundo">
-                                <img src="img/oleo-de-barba.png" alt="Óleo de Barba"  data-aos="zoom-in" 
-                                data-aos-duration="600">
+                                <img src="./img/lowfade.jpg" alt="">
                             </div>
-                        </li>
-                        <li data-aos="zoom-in-up" data-aos-duration="600"><strong>Produtos</strong></li>
-                        <li>
-                            <h4>Óleo para Barba</h4>
-                        </li>
-                        <li>
-                            <p data-aos="fade-left">Hidrata e dá brilho à barba, promovendo maciez e prevenindo coceiras e irritações na
-                                pele.</p>
-                        </li>
-                    </ul>
+                            <div class="swiper-slide">
+                                <img src="./img/luzes.jpg" alt="">
 
-
-
-
-                </div>
-
-            </div>
-        </section>
-
-        <section id="sobre">
-            <div class="sobre-container">
-                <div class="swiper mySwiper2" data-aos="fade-right" data-aos-duration="600">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="./img/mid fade.png" alt="">
-
-                            <img src="./img/high fade3.png" alt="">
+                                <img src="./img/lowfade2.jpg" alt="">
+                            </div>
                         </div>
-                        <div class="swiper-slide">
-                            <img src="./img/cortecabelo3.jpg" alt="">
 
-                            <img src="./img/cortecabelo4.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/low fade.png" alt="">
-
-                            <img src="./img/lowfade.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/luzes.jpg" alt="">
-
-                            <img src="./img/lowfade2.jpg" alt="">
-                        </div>
+                        <div class="swiper-pagination mySwiper2-pagination"></div>
                     </div>
 
-                    <div class="swiper-pagination mySwiper2-pagination"></div>
+
+                    <article>
+                        <div class="sobre-title">
+                            <h4 data-aos="fade-right" data-aos-duration="600">Sobre a Barbearia</h4>
+                            <h2 data-aos="zoom-in" data-aos-duration="600">Quem Somos</h2>
+                            <p data-aos="fade-up" data-aos-duration="600">O melhor corte de cabelo e cuidados para
+                                homens com estilo.</p>
+                        </div>
+
+                        <p data-aos="fade-down" data-aos-duration="600">Na nossa barbearia, oferecemos cortes modernos e
+                            personalizados para homens, com profissionais
+                            especializados para todos os estilos.</p>
+
+                        <p data-aos="fade-up" data-aos-duration="600">Além dos cortes, também realizamos serviços de
+                            barba, hidratação e um atendimento completo,
+                            proporcionando uma experiência única e de qualidade.</p>
+
+
+                        <a class="fancy" href="#">
+                            <span class="top-key"></span>
+                            <span class="text">Ver Mais</span>
+                            <span class="bottom-key-1"></span>
+                            <span class="bottom-key-2"></span>
+                        </a>
+
+                    </article>
+
+
+
+
+
                 </div>
 
-
-                <article>
-                    <div class="sobre-title">
-                        <h4 data-aos="fade-right" data-aos-duration="600">Sobre a Barbearia</h4>
-                        <h2 data-aos="zoom-in" data-aos-duration="600">Quem Somos</h2>
-                        <p data-aos="fade-left" data-aos-duration="600">O melhor corte de cabelo e cuidados para homens com estilo.</p>
-                    </div>
-
-                    <p data-aos="fade-down" data-aos-duration="600">Na nossa barbearia, oferecemos cortes modernos e personalizados para homens, com profissionais
-                        especializados para todos os estilos.</p>
-
-                    <p data-aos="fade-left" data-aos-duration="600" >Além dos cortes, também realizamos serviços de barba, hidratação e um atendimento completo,
-                        proporcionando uma experiência única e de qualidade.</p>
+            </section>
 
 
-                    <a class="fancy" href="#">
-                        <span class="top-key"></span>
-                        <span class="text">Ver Mais</span>
-                        <span class="bottom-key-1"></span>
-                        <span class="bottom-key-2"></span>
-                    </a>
-
-                </article>
+        </main>
 
 
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+              <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap">
+                  <svg class="bi" width="30" height="24" aria-hidden="true"><use xlink:href="#bootstrap"/></svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2025 Barbearia Petrini, Inc</span>
+              </div>
+          
+              <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-body-secondary" href="#" aria-label="Instagram"><svg class="bi" width="24" height="24" aria-hidden="true"><use xlink:href="#instagram"/></svg></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#" aria-label="Facebook"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+              </ul>
+            </footer>
+          </div>
 
 
-
-            </div>
-
-        </section>
-
-
-    </main>
-
-
-    <footer>
-
-    </footer>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+            crossorigin="anonymous"></script>
 
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
-    <!-- JQUERY  -->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <!-- JQUERY  -->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- cdn  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+        <!-- cdn  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
 
 
-    <!-- MEU LINK JS  -->
-    <script src="script/script.js"></script>
+        <!-- MEU LINK JS  -->
+        <script src="script/script.js"></script>
 
-</div>
+    </div>
 
 </body>
 
